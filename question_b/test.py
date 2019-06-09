@@ -7,6 +7,7 @@ class TestQuestionB(unittest.TestCase):
         self.greater_value="9.5"
         self.value="3.0"
         self.expected = f"{self.greater_value} > {self.value}"
+        
     def test_must_return_first_value_is_greater(self):
         actual = question_b.check_values(self.greater_value, self.value)
         self.assertEqual(self.expected, actual)
