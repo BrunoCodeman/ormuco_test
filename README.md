@@ -17,7 +17,13 @@ As a hint, we are not looking for quantity, but rather quality, maintainability,
 
 When submitting your code add the necessary documentation to explain your overall design and missing functionalities. 
 
-Good Luck, name the test using the convention firstname_lastname_test and provide a link in your personal github so we can review the work.
+To execute the tests:
+=
+`chmod +x execute_tests.sh && ./execute_tests.sh`
+
+To run Question C's API:
+=
+`chmod +x execute_question_c_api.sh && ./execute_question_c_api.sh`
 
 
 
