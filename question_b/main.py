@@ -13,6 +13,7 @@ def check_values(val1:str, val2:str) -> str:
     Excepts:
     - ValueError: Returns a message warning at least one of the parameters is not a number
     """
+    
     try:
         _first = float(val1)
         _second = float(val2)
