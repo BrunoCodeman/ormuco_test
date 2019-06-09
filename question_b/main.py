@@ -15,7 +15,6 @@ def check_values(val1:str, val2:str):
 
         msg = f"{_greater} {_rel} {_smaller}"
     except ValueError as verr:
-        #print(verr)
         msg = "gimme numbers plz"
     finally:
         return msg
