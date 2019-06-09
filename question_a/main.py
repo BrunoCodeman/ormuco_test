@@ -1,6 +1,6 @@
 
 
-def check_overlap(line1: tuple, line2: tuple):
+def check_overlap(line1: tuple, line2: tuple) -> bool:
     """
     Checks if there is  an overlap between two lines
     
@@ -9,10 +9,11 @@ def check_overlap(line1: tuple, line2: tuple):
     - line2: A tuple containing the initial and the final points of the second line
     
      Returns:
-    - True if there is an overlap else false
+    - True if there is an overlap otherwise False
     """
     _first = list(line1)
     _second  = list(line2)
+    #sorting the list so the order of the numbers in the tuples doesn't matter
     _first.sort()
     _second.sort()
     _first_range= range(*_first)
