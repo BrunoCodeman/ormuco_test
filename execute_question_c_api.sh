@@ -1,0 +1,1 @@
+cd question_c/ && python main.py
