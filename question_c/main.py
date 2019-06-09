@@ -54,9 +54,6 @@ def search_content():
     search_result = __google_search__(search_term)
     return jsonify({ "data": list(map(__format_data__,search_result)) })
 
-__api_key__, __cse_id__ = __load_config__()
-
-
 if __name__ == "__main__":
     custom_search_engine_url = "https://cse.google.com/cse/all"
     api_key_url = "https://developers.google.com/custom-search/v1/introduction"
@@ -77,6 +74,7 @@ if __name__ == "__main__":
     print(search_instructions)
 
     try:
+        __api_key__, __cse_id__ = __load_config__()
         app.run()
     except Exception as ex:
         print(running_instructions)
